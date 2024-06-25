@@ -11,3 +11,5 @@ git pull origin main - will download the remote file to local
 del .git\index.lock - if the terminal says unable to commit cause one process is already running
 
 Install nodemon on your pc or project - npm i g nodemon
+
+rm -rf .git -removes git
