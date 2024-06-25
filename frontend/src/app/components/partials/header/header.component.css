@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #040404;
+  color: white;
+  height: 80px;
+}
+
+.navbar-left img {
+  max-height: 64px; /* Adjust according to your design */
+  margin-left: 28px;
+}
+
+.navbar-right {
+  font-size: 18px;
+  margin-right: 200px; /* Add margin to the right to create space */
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Align items vertically */
+}
+
+.navbar-right .nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Align items horizontally in the center */
+  align-items: center; /* Align items vertically in the center */
+}
+/* navbar.component.css */
+
+.navbar-right .nav-item img {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  align-items: center;
+}
+
+.navbar-right .nav-item {
+  margin-left: 42px; /* Adjust spacing between nav items */
+}
+
+.navbar-right .nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-right .nav-item a:hover {
+  color: #ccc;
+}

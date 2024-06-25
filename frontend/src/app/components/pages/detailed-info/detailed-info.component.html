@@ -1,0 +1,37 @@
+<div class="about-container">
+    <div>
+      <h3>About</h3>
+       <p>{{ event?.description }}</p>
+    </div>
+    <div class="terms-container">
+      <h3>
+        <span>Terms and Conditions</span>
+        <img src="assets/images/dropdown.svg" alt="Dropdown Icon" (click)="toggleDropdown('terms')" class="dropdown-icon">
+      </h3>
+      <div class="dropdown-content" *ngIf="showDropdown === 'terms'">
+        <p>Terms and conditions content goes here...</p>
+      </div>
+      <div class="dropdown-text" *ngIf="showDropdown === 'terms'">
+        <p> Limit: 10+
+Tickets once booked cannot be exchanged or refunded.
+An Internet handling fee per ticket may be levied. Please check the total amount before the payment.
+We recommend that you arrive at least 30 minutes prior at the venue.
+</p>
+      </div>
+    </div>
+    <div class="safety-container">
+      <h3>
+        <span>COVID Safety Details</span>
+        <img src="assets/images/dropdown.svg" alt="Dropdown Icon" (click)="toggleDropdown('safety')" class="dropdown-icon">
+      </h3>
+      <div class="dropdown-content" *ngIf="showDropdown === 'safety'">
+        <p>COVID safety details content goes here...</p>
+      </div>
+      <div class="dropdown-text" *ngIf="showDropdown === 'safety'">
+       <p> Owing to the recent conditions surrounding the COVID – 19 pandemic, as a pre-condition to gaining access to the venue (events and theatres) you are required to be fully vaccinated and may be required to display your COVID – 19 certificate at the venue as per the various norms /regulations prevailing in the said State. The venue provider and governing authorities reserve the right to exclude any user from the venue if there are sufficient grounds to believe so for failure to abide by the protocols. You agree to exit without protest or refund. Users are required to check the restrictions as applicable in their State
+Use of masks is mandatory at all times and the visitors are required to maintain social distancing norms. The venue and Bigtree reserve the right to change/modify the terms and conditions.
+Bigtree does not assume any responsibility with regards to any injury or complications due to COVID – 19 accrued as a result of your participation.
+</p>
+      </div>
+    </div>
+  </div>

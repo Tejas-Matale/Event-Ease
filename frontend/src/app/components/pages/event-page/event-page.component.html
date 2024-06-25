@@ -1,0 +1,48 @@
+<app-not-found
+  [visible]="!event"
+  notFoundMessage="Event Not Found"
+  resetLinkText="Home Page">
+</app-not-found>
+
+<div *ngIf="event" class="event-details-container">
+  <div class="image-container">
+    <img [src]="event.imageUrl" [alt]="event.name">
+  </div>
+  <div class="details-card">
+    <div class="title-container">
+      <h2>{{event.name}}</h2>
+    </div>
+    <div class="logos-container">
+      <!-- Logo 1 -->
+      <div class="logo-item">
+        <img src="../assets/images/tag.png" alt="Tag Icon">
+        <span><ng-container *ngIf="event.tags">
+          <a *ngFor="let tag of event.tags; let first = first" routerLink="/tag/{{tag}}" [ngClass]="{'first-tag': first}">{{first ? tag : ', ' + tag}}</a>
+        </ng-container></span>
+      </div>
+      <!-- Logo 2 -->
+      <div class="logo-item">
+        <img src="../assets/images/calendar.png" alt="calender Icon">
+        <span>{{event.time}}</span>
+      </div>
+      <!-- Logo 3 -->
+      <div class="logo-item">
+        <img src="../assets/images/location.png" alt="location Icon">
+        <span>{{event.location}}</span>
+      </div>
+    </div>
+    <div class="header-info">
+      <div class="header-block">
+        <h3>Event Guide</h3>
+        <p>For Ages: 10+</p>
+      </div>
+      
+      <div class="additional-info">
+        <h3>{{event.price}}$ onwards</h3>
+        <button (click)="addToCart()">BOOK NOW</button>
+      </div>
+      <a href="event/edit/{{event._id}}">Edit</a>
+    </div>
+  </div>
+</div>
+<app-detailed-info [event]="event"></app-detailed-info>

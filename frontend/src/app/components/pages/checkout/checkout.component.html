@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--For Awesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <title>Your Page Title</title>
+    </head>
+    
+<body>
+    
+<div class="container">
+    <form action="">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">Ticket Details</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="email" placeholder="example@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>Address :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+               <!-- <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Mumbai">
+                </div>-->
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="india">
+                    </div>
+                    <div class="inputBox">
+                        <span>Zip Code:</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <h3 class="title">Payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="..\assets\images\card_img.png" alt="">
+                </div>
+                <form action="#">
+                    <input type="radio" name="Payment" id="visa">
+                    <input type="radio" name="Payment" id="mastercard">
+                    <input type="radio" name="Payment" id="paypal">
+                    <input type="radio" name="Payment" id="AMEX">
+
+                    <div class="category">
+                        <label for="visa" class="visaMethod">
+                            <div class="imgName">
+                                <div class="imgContainer visa">
+                                    <img src="..\assets\images\visa-hd-transparent-logo-6.6125175268389285" alt="">
+                                </div>
+                                <span class="name">Visa</span>
+                            </div>
+                            <span class="check"><i class="fa-solid fa-circle-check" style="color: #501de9;"></i></span>
+                        </label>
+
+                        <label for="mastercard" class="masterMethod">
+                            <div class="imgName">
+                                <div class="imgContainer mastercard" >
+                                    <img src="..\assets\images\Mastercard-Logo-PNG-HD.png" alt="">
+                                </div>
+                                <span class="name">Mastercard</span>
+                            </div>
+                            <span class="check" ><i class="fa-solid fa-circle-check" style="color: #501de9;"></i></span>
+                        </label>
+
+                        <label for="paypal" class="paypalMethod">
+                            <div class="imgName">
+                                <div class="imgContainer paypal">
+                                    <img src="..\src\assets\images\OIP.jpeg" alt="">
+                                </div>
+                                <span class="name">Paypal</span>
+                            </div>
+                            <span class="check" ><i class="fa-solid fa-circle-check" style="color: #501de9;"></i></span>
+                        </label>
+
+                        <label for="AMEX" class="amexMethod">
+                            <div class="imgName">
+                                <div class="imgContainer AMEX">
+                                    <img src="..\assets\images\16_Amex_Credit_Card-1024.webp" alt="">
+                                </div>
+                                <span class="name">AMEX</span>
+                            </div>
+                            <span class="check"><i class="fa-solid fa-circle-check" style="color: #501de9;"></i></span>
+                        </label>
+                    </div> 
+
+
+
+                </form>
+                <input type="submit" value="proceed to checkout" class="submit-btn">
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. John deo">
+                </div>
+                <div class="inputBox">
+                    <span>credir card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="January">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV:</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+    </form>
+    
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<header class="navbar">
+  <div class="navbar-left">
+    <a routerLink="/" class="logo"><img src="assets/images/EventEase logo-white.png" alt="EventEase Logo"></a>
+
+  </div>
+  <div class="navbar-right">
+    <ul class="nav-items">
+      <li class="nav-item"><a routerLink="/">Home</a></li>
+      <li class="nav-item"><a routerLink="/about">Events</a></li>
+      <li class="nav-item"><a routerLink="/contact">Support</a></li>
+      <li class="nav-item"><a routerLink="/add">New Event</a></li>
+      <li class="nav-item"><a routerLink="/contact">SignIn</a></li>
+      <li class="nav-item"><a routerLink="/cart-page">
+        <img src="..\assets\images\shopping-cart.png" alt="Shopping Cart">
+        <span *ngIf="cartQuantity">{{cartQuantity}}</span></a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/profile">
+        <img src="..\assets\images\user(profile icon).png" alt="User Profile Icon">
+      </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+  

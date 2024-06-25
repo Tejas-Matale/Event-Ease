@@ -1,0 +1,103 @@
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .event-details-container {
+    display: flex;
+    align-items: stretch; /* Stretch items to equal height */
+    margin: 60px 100px; /* Adjust margin as needed */
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex; /* Nested flex container */
+  }
+  
+  .image-container img {
+    content: fit;
+    width: auto;
+    height: auto;
+    height: 500px;
+    align-self: center; /* Vertically center the image */
+    border-radius: 20px;
+  }
+  
+  .details-card {
+    max-height: 460px;
+    flex: 2;
+    margin-left: 60px; /* Adjust margin as needed */
+    padding: 20px;
+    border: 1px solid #a1a1a1;
+    border-radius: 20px;
+  }
+  
+  .title-container {
+    background-color: #F9820F;;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    max-height: 80px;
+    color: white;
+  }
+  
+  
+  .logos-container {
+  
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .logo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+  
+  .logo-item img {
+    max-width: 20px; /* Reduce the size of the images */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .additional-info {
+      font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+  }
+  
+  .additional-info button {
+    background-color: #F9820F;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  /* eventdetails.component.css */
+  
+  .header-info {
+      margin-top: 30px; /* Adjust margin as needed */
+    }
+    
+    .header-block h3 {
+      font-size: 18px; /* Adjust font size of the subheader */
+      margin-left: 5px;
+    }
+    
+   
+    .header-block p {
+      color: #323232;
+      font-size: 16px; /* Adjust font size of the paragraph */
+      margin-left: 5px;
+    }
+
+    .header-block a:first-child::before {
+      content: none;
+    }
