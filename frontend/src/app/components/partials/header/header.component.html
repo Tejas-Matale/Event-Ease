@@ -9,7 +9,7 @@
       <li class="nav-item"><a routerLink="/about">Events</a></li>
       <li class="nav-item"><a routerLink="/contact">Support</a></li>
       <li class="nav-item"><a routerLink="/add">New Event</a></li>
-      <li class="nav-item"><a routerLink="/contact">SignIn</a></li>
+      <li *ngIf="!user.token" class="nav-item"><a routerLink="/login">SignIn</a></li>
       <li class="nav-item"><a routerLink="/cart-page">
         <img src="..\assets\images\shopping-cart.png" alt="Shopping Cart">
         <span *ngIf="cartQuantity">{{cartQuantity}}</span></a>
@@ -18,6 +18,14 @@
         <a routerLink="/profile">
         <img src="..\assets\images\user(profile icon).png" alt="User Profile Icon">
       </a>
+      </li>
+      <li class="menu-container">
+      <a routerLink="/dashboard">{{user.name}}</a>
+      <div class="menu">
+        <a routerLink="/profile">Profile</a>
+        <a routerLink="/orders">Orders</a>
+        <a routerLink="" (click)="logout()">Logout</a>
+      </div>
       </li>
     </ul>
   </div>

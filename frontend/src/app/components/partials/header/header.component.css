@@ -48,3 +48,36 @@
 .navbar-right .nav-item a:hover {
   color: #ccc;
 }
+
+.nav-item{
+  padding-right: 10px;
+}
+
+.menu-container{
+  position: relative;
+}
+
+.menu{
+  position:absolute;
+  z-index:1;
+  background:whitesmoke;
+  display: none;
+}
+
+.menu-container:hover .menu{
+  display: block;
+}
+
+.menu a{
+  width: 100%;
+  min-width:8rem;
+  color: #040404;
+  text-decoration: none;
+}
+
+ul a{
+  padding: 5px;
+  display: inline-block;
+  color: #ccc;
+  text-decoration: none;
+}

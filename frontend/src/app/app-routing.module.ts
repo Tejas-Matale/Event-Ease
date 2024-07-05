@@ -6,6 +6,7 @@ import { CartPageComponent } from './components/pages/cart-page/cart-page.compon
 import { CheckoutComponent } from './components/pages/checkout/checkout.component';
 import { NewEventComponent } from './components/pages/new-event/new-event.component';
 import { EditEventComponent } from './components/pages/edit-event/edit-event.component';
+import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,8 +16,10 @@ const routes: Routes = [
   { path: 'cart-page', component: CartPageComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'add', component: NewEventComponent },
-  { path: 'event/edit/:id', component: EditEventComponent }
+  { path: 'event/edit/:id', component: EditEventComponent },
+  { path: 'login', component: LoginPageComponent }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

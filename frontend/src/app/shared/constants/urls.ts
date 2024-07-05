@@ -5,3 +5,5 @@ export const EVENT_TAGS_URL=EVENT_URL+'/tags';
 export const EVENT_BY_SEARCH_URL=EVENT_URL+'/search/';
 export const EVENT_BY_TAGS_URL=EVENT_URL+'/tag/';
 export const EVENT_BY_ID_URL=EVENT_URL+'/';
+
+export const USER_LOGIN_URL=BASE_URL + '/api/users/login'

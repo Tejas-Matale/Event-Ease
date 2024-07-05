@@ -1,7 +1,6 @@
 
 export const sample_event: any[] = [
   {
-    id: '1',
     name: 'Music Concert',
     Time: '1:00 AM',
     price: 10,
@@ -12,7 +11,6 @@ export const sample_event: any[] = [
     tags: ['Songs', 'Exhibit', 'Comedy'],
   },
   {
-    id: '2',
     name: 'Comedy Show',
     price: 20,
     Time: '5:30 PM',
@@ -23,7 +21,6 @@ export const sample_event: any[] = [
     tags: ['Theatre', 'Comedy'],
   },
   {
-    id: '3',
     name: 'Birthday Celebration',
     price: 5,
     Time: '10:15 PM',
@@ -34,7 +31,6 @@ export const sample_event: any[] = [
     tags: ['Songs', 'Comedy'],
   },
   {
-    id: '4',
     name: 'Wedding Ceremony',
     price: 2,
     Time: '10:10 PM',
@@ -45,7 +41,6 @@ export const sample_event: any[] = [
     tags: ['Songs', 'Wed'],
   },
   {
-    id: '5',
     name: 'EDM Festival',
     price: 11,
     Time: '4:30 PM',
@@ -56,7 +51,6 @@ export const sample_event: any[] = [
     tags: ['Theatre', 'EDM'],
   },
   {
-    id: '6',
     name: 'Theater Performance',
     price: 9,
     Time: '5:00 PM',
@@ -67,7 +61,6 @@ export const sample_event: any[] = [
     tags: ['Songs', 'Live', 'Comedy'],
   },
   {
-    id: '7',
     name: 'Special Theater Event',
     price: 9,
     Time: '5:00 PM',

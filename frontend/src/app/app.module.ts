@@ -16,6 +16,9 @@ import { DetailedInfoComponent } from './components/pages/detailed-info/detailed
 import { NewEventComponent } from './components/pages/new-event/new-event.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditEventComponent } from './components/pages/edit-event/edit-event.component';
+import { LoginPageComponent } from './components/pages/login-page/login-page.component';
+import { ToastrModule } from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,14 +34,21 @@ import { EditEventComponent } from './components/pages/edit-event/edit-event.com
     CheckoutComponent,
     DetailedInfoComponent,
     NewEventComponent,
-    EditEventComponent
+    EditEventComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot({
+      timeOut:3000,
+      positionClass:'toast-bottom-right',
+      newestOnTop:false
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
